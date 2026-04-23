@@ -39,7 +39,7 @@ const About = () => {
           
           <div className="mt-8">
             <p className="font-display italic text-[15px] text-muted dark:text-[#A09890] text-center md:text-left">
-              Associate Professor, Dept. of Management<br/>
+              Associate Professor, Dept. of Electronic and Telecommunication Engineering<br/>
               Symbiosis Institute of Technology, Pune
             </p>
           </div>
