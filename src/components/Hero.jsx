@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="max-w-[1920px] mx-auto w-full grid grid-cols-1 md:grid-cols-[55%_45%] min-h-[calc(100vh-96px)]">
         
         {/* Left Content */}
-        <div className="flex flex-col justify-center px-8 md:px-20 py-12 md:py-0 z-10">
+        <div className="flex flex-col justify-center px-8 md:px-20 pt-16 pb-28 md:pt-0 md:pb-32 z-10">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
