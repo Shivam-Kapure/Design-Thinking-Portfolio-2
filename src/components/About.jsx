@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import bhavnaImg from '../assets/images/bhavna.jpg';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
@@ -28,7 +29,7 @@ const About = () => {
             
             <div className="relative z-10 w-full h-full overflow-hidden filter sepia-[.1] contrast-[1.05] dark:sepia-0 dark:brightness-[.85] dark:contrast-[1.1] transition-all duration-500">
               <img 
-                src="/src/assets/images/bhavna.jpg" 
+                src={bhavnaImg} 
                 onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800'; }}
                 alt="Dr. Bhavna Ambudkar portrait" 
                 className="w-full h-full object-cover"

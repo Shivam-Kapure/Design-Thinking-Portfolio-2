@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
+import bhavnaImg from '../assets/images/bhavna.jpg';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -98,7 +99,7 @@ const Hero = () => {
           style={{ clipPath: 'polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%)' }}
         >
           <img 
-            src="/src/assets/images/bhavna.jpg" 
+            src={bhavnaImg} 
             onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800'; }}
             alt="Dr. Bhavna Ambudkar"
             className="w-full h-full object-cover"
