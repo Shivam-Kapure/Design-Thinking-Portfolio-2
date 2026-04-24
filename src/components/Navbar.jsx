@@ -49,7 +49,7 @@ const Navbar = () => {
             duration={800}
             className="cursor-pointer font-display italic font-medium text-[22px] text-gold"
           >
-            BA
+            EV
           </Link>
 
           {/* Desktop Nav */}

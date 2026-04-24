@@ -173,10 +173,10 @@ const Contact = () => {
           >
             <div className="flex flex-col gap-4">
               {[
-                { label: "Email Me", value: "bhavna.ambudkar@sitpune.edu.in", link: "mailto:bhavna.ambudkar@sitpune.edu.in", icon: Mail },
-                { label: "Connect on LinkedIn", value: "/in/bhavna-ambudkar", link: "https://linkedin.com/in/bhavna-ambudkar-2683a919", icon: LinkedinIcon },
-                { label: "Google Scholar Profile", value: "Dr. Bhavna Ambudkar", link: "https://scholar.google.com/citations?user=s3EygqgAAAAJ&hl=en", icon: GraduationCap },
-                { label: "ResearchGate Profile", value: "Dr. Bhavna Ambudkar", link: "https://www.researchgate.net/profile/Dr-Bhavna-Ambudkar", icon: BookOpen }
+                { label: "Email Me", value: "eleanor.vance@hogwart.edu", link: "mailto:eleanor.vance@hogwart.edu", icon: Mail },
+                { label: "Connect on LinkedIn", value: "/in/eleanor-vance", link: "https://linkedin.com/", icon: LinkedinIcon },
+                { label: "Google Scholar Profile", value: "Dr. Eleanor Vance", link: "https://scholar.google.com/", icon: GraduationCap },
+                { label: "ResearchGate Profile", value: "Dr. Eleanor Vance", link: "https://www.researchgate.net/", icon: BookOpen }
               ].map((info, idx) => {
                 const Icon = info.icon;
                 return (
@@ -215,7 +215,7 @@ const Contact = () => {
                 "Innovation is born from the intersection of empathy, creativity, and systemic thinking."
               </p>
               <p className="font-sans text-[13px] text-muted dark:text-[#A09890] mt-3 uppercase tracking-widest">
-                — DR. BHAVNA AMBUDKAR
+                — DR. ELEANOR VANCE
               </p>
             </motion.div>
           </motion.div>

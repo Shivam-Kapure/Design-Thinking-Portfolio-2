@@ -14,7 +14,7 @@ const stagger = {
 const smallProjects = [
   {
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600",
-    category: "AICTE Initiative",
+    category: "College Board Initiative",
     title: "National Design Thinking Curriculum Reform",
     description: "Co-lead",
     year: "2022"
@@ -39,9 +39,9 @@ const Projects = () => {
   return (
     <section id="projects" className="bg-surface dark:bg-[#1C1A16] py-32 px-8 md:px-20">
       <div className="max-w-[1920px] mx-auto">
-        <motion.div 
-          initial="hidden" 
-          whileInView="visible" 
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeUp}
           className="mb-16"
@@ -60,17 +60,17 @@ const Projects = () => {
         </motion.div>
 
         {/* Featured Project */}
-        <motion.div 
-          initial="hidden" 
-          whileInView="visible" 
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeUp}
           className="bg-card dark:bg-[#242018] border border-border dark:border-[#333028] overflow-hidden grid grid-cols-1 md:grid-cols-2 mb-8 group cursor-pointer"
         >
           <div className="overflow-hidden">
-            <img 
-              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800" 
-              alt="Design Thinking Workshop" 
+            <img
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800"
+              alt="Design Thinking Workshop"
               className="w-full h-80 md:h-full object-cover dark:brightness-75 group-hover:scale-105 transition-transform duration-700 ease-[0.22,1,0.36,1]"
             />
           </div>
@@ -79,13 +79,13 @@ const Projects = () => {
               Flagship Initiative
             </span>
             <h3 className="font-display font-medium text-[32px] text-ink dark:text-[#FAF7F2] leading-tight mb-6">
-              Innovation Cell — SIT Pune
+              Innovation Cell — HOGWARTS
             </h3>
             <p className="font-sans font-light text-[15px] leading-[1.7] text-muted dark:text-[#A09890] mb-10">
-              Founded and led SIT's interdisciplinary innovation cell, mentoring 50+ student startups,
+              Founded and led HOGWARTS's interdisciplinary innovation cell, mentoring 50+ student startups,
               facilitating 20+ funded prototypes, and establishing the institution's first Design Lab.
             </p>
-            
+
             <div className="flex flex-wrap gap-6 mt-auto">
               <div className="flex items-center gap-2">
                 <span className="font-sans text-[10px] uppercase text-gold">Year:</span>
@@ -106,7 +106,7 @@ const Projects = () => {
         </motion.div>
 
         {/* Small Cards */}
-        <motion.div 
+        <motion.div
           variants={stagger}
           initial="hidden"
           whileInView="visible"
@@ -114,15 +114,15 @@ const Projects = () => {
           className="grid grid-cols-1 md:grid-cols-3 gap-6"
         >
           {smallProjects.map((project, idx) => (
-            <motion.div 
+            <motion.div
               key={idx}
               variants={fadeUp}
               className="bg-card dark:bg-[#242018] border border-border dark:border-[#333028] overflow-hidden group cursor-pointer"
             >
               <div className="overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
+                <img
+                  src={project.image}
+                  alt={project.title}
                   className="w-full h-48 object-cover dark:brightness-75 group-hover:scale-105 transition-transform duration-700 ease-[0.22,1,0.36,1]"
                 />
               </div>

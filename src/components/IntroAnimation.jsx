@@ -22,7 +22,7 @@ const IntroAnimation = ({ onComplete }) => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="font-display font-light text-[96px] leading-none text-[#C8A96E]"
       >
-        B
+        E
       </motion.div>
 
       <motion.div
@@ -38,7 +38,7 @@ const IntroAnimation = ({ onComplete }) => {
         transition={{ delay: 1.4, duration: 0.6 }}
         className="font-sans text-[14px] tracking-[0.3em] uppercase text-[#FAF7F2] mt-6"
       >
-        Dr. Bhavna Ambudkar
+        Dr. Eleanor Vance
       </motion.div>
 
       <motion.div

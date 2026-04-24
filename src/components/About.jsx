@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import bhavnaImg from '../assets/images/bhavna.jpg';
+import professorImg from '../assets/images/professor.png';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
@@ -29,9 +29,9 @@ const About = () => {
             
             <div className="relative z-10 w-full h-full overflow-hidden filter sepia-[.1] contrast-[1.05] dark:sepia-0 dark:brightness-[.85] dark:contrast-[1.1] transition-all duration-500">
               <img 
-                src={bhavnaImg} 
+                src={professorImg} 
                 onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800'; }}
-                alt="Dr. Bhavna Ambudkar portrait" 
+                alt="Dr. Eleanor Vance portrait" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -40,7 +40,7 @@ const About = () => {
           <div className="mt-8">
             <p className="font-display italic text-[15px] text-muted dark:text-[#A09890] text-center md:text-left">
               Associate Professor, Dept. of Electronic and Telecommunication Engineering<br/>
-              Symbiosis Institute of Technology, Pune
+              Hogwart University
             </p>
           </div>
         </motion.div>
@@ -60,7 +60,7 @@ const About = () => {
           </motion.h2>
 
           <motion.p variants={fadeUp} className="font-sans font-light text-[16px] leading-[1.8] text-muted dark:text-[#A09890] mb-6">
-            With over 15 years of teaching, research, and industry engagement, Dr. Bhavna Ambudkar brings
+            With over 15 years of teaching, research, and industry engagement, Dr. Eleanor Vance brings
             a rare blend of academic rigor and practical relevance to Design Thinking education. Her work
             spans classrooms, boardrooms, and startup ecosystems — consistently placing human-centered
             problem-solving at the center of innovation.
@@ -82,7 +82,7 @@ const About = () => {
               and ends with meaningful change."
             </p>
             <span className="font-sans text-[12px] text-gold tracking-wider uppercase inline-block mt-2">
-              — Dr. Bhavna Ambudkar
+              — Dr. Eleanor Vance
             </span>
           </motion.div>
 

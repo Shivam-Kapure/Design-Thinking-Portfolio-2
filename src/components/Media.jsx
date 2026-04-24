@@ -15,11 +15,11 @@ const stagger = {
 const awards = [
   {
     title: "Best Educator Award",
-    issuer: "Symbiosis International University, 2023"
+    issuer: "Hogwarts University, 2023"
   },
   {
     title: "Innovation Champion",
-    issuer: "CII (Confederation of Indian Industry), 2022"
+    issuer: "CII (Confederation of International Industry), 2022"
   },
   {
     title: "National Design Thinking Fellow",
@@ -27,7 +27,7 @@ const awards = [
   },
   {
     title: "Excellence in Research Mentorship",
-    issuer: "AICTE India, 2020"
+    issuer: "Global Foundation, 2020"
   },
   {
     title: "Outstanding Faculty in Entrepreneurship",
@@ -35,15 +35,15 @@ const awards = [
   },
   {
     title: "Women Leader in Academia",
-    issuer: "FICCI FLO Pune Chapter, 2018"
+    issuer: "FICCI FLO Japan Chapter, 2018"
   }
 ];
 
 const mediaMentions = [
-  "The Hindu Education Plus",
-  "Economic Times HE",
-  "Mint Campus",
-  "YourStory",
+  "Global Education Plus",
+  "Higher Ed Times",
+  "Campus Review",
+  "TechStory",
   "EdTechReview"
 ];
 
@@ -51,9 +51,9 @@ const Media = () => {
   return (
     <section id="media" className="bg-surface dark:bg-[#1C1A16] py-32 px-8 md:px-20 overflow-hidden">
       <div className="max-w-[1920px] mx-auto">
-        <motion.div 
-          initial="hidden" 
-          whileInView="visible" 
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeUp}
           className="mb-16"
@@ -72,15 +72,15 @@ const Media = () => {
         </motion.div>
 
         {/* Awards Grid */}
-        <motion.div 
-           variants={stagger}
-           initial="hidden"
-           whileInView="visible"
-           viewport={{ once: true, margin: "-100px" }}
-           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24"
+        <motion.div
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24"
         >
           {awards.map((award, idx) => (
-            <motion.div 
+            <motion.div
               key={idx}
               variants={fadeUp}
               className="bg-card dark:bg-[#242018] border border-border dark:border-[#333028] p-8 hover:border-gold transition-colors duration-300"
@@ -97,9 +97,9 @@ const Media = () => {
         </motion.div>
 
         {/* Media Mentions - horizontal scroll mobile, grid desktop */}
-        <motion.div 
-          initial="hidden" 
-          whileInView="visible" 
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeUp}
         >
@@ -107,10 +107,10 @@ const Media = () => {
             <h3 className="font-sans text-[12px] uppercase tracking-widest text-muted dark:text-[#A09890]">Featured In</h3>
             <div className="h-px flex-1 bg-border dark:bg-[#333028]" />
           </div>
-          
+
           <div className="flex md:grid md:grid-cols-5 gap-4 overflow-x-auto pb-4 md:pb-0 -mx-8 px-8 md:mx-0 md:px-0 snap-x">
             {mediaMentions.map((mention, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="flex-[0_0_240px] md:flex-auto h-20 flex items-center justify-center bg-card dark:bg-[#242018] border border-border dark:border-[#333028] px-4 grayscale hover:grayscale-0 transition-all duration-300 cursor-default snap-center hover:border-gold"
               >

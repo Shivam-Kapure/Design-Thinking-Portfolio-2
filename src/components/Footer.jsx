@@ -16,10 +16,10 @@ const navLinks = [
 ];
 
 const SocialLinks = [
-  { name: "LinkedIn", link: "#" },
-  { name: "Google Scholar", link: "#" },
-  { name: "ResearchGate", link: "#" },
-  { name: "Academia", link: "#" }
+  { name: "LinkedIn", link: "https://linkedin.com/" },
+  { name: "Google Scholar", link: "https://scholar.google.com/" },
+  { name: "ResearchGate", link: "https://www.researchgate.net/" },
+  { name: "Academia", link: "https://www.academia.edu/" }
 ];
 
 const Footer = () => {
@@ -36,7 +36,7 @@ const Footer = () => {
               duration={800}
               className="cursor-pointer font-display italic font-medium text-[32px] text-gold mb-4"
             >
-              BA
+              EV
             </Link>
             <p className="font-sans font-light text-[15px] leading-[1.6] text-[#A09890] max-w-sm">
               Designing Futures. One Mind at a Time.
@@ -87,7 +87,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-[#333028] mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
           <p className="font-sans text-[12px] text-[#6B6560]">
-            © 2025 Dr. Bhavna Ambudkar. All rights reserved.
+            © 2025 Dr. Eleanor Vance. All rights reserved.
           </p>
           <p className="font-display italic text-[14px] text-[#6B6560]">
             Designed with intent. Built with purpose.

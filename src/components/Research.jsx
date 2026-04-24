@@ -106,9 +106,10 @@ const Research = () => {
                 <h4 className="font-sans font-medium text-[16px] text-ink dark:text-[#FAF7F2] mb-1 group-hover:text-gold transition-colors">
                   {pub.title}
                 </h4>
-                <p className="font-sans text-[13px] text-muted dark:text-[#A09890]">
+                <p className="font-sans text-[13px] text-muted dark:text-[#A09890] mb-3">
                   {pub.meta}
                 </p>
+                <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" className="font-sans text-[11px] text-gold uppercase tracking-widest hover:underline mt-auto">Read Paper</a>
               </div>
             </motion.div>
           ))}
@@ -122,7 +123,7 @@ const Research = () => {
           className="mt-12"
         >
           <a 
-            href="https://scholar.google.com/citations?user=s3EygqgAAAAJ&hl=en"
+            href="https://scholar.google.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border border-gold text-gold px-8 py-3 text-sm uppercase tracking-widest font-sans font-medium hover:bg-gold hover:text-[#0F0E0C] transition-all duration-300"

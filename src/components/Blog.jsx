@@ -87,10 +87,11 @@ const Blog = () => {
               but an imperative for creating sustainable impact.
             </p>
             
-            <div className="mt-auto flex flex-col items-start gap-4">
+            <div className="mt-auto flex items-center justify-between w-full gap-4">
               <span className="font-sans text-[12px] text-muted dark:text-[#A09890]">
                 March 15, 2024
               </span>
+              <a href="https://medium.com/" target="_blank" rel="noopener noreferrer" className="font-sans text-[12px] text-gold uppercase tracking-widest hover:underline">Read Full Blog</a>
             </div>
           </div>
         </motion.div>
@@ -126,10 +127,11 @@ const Blog = () => {
                 <p className="font-sans font-light text-[13px] leading-[1.6] text-muted dark:text-[#A09890] mb-6">
                   {post.excerpt}
                 </p>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between mt-4">
                   <span className="font-sans text-[11px] text-muted dark:text-[#A09890]">
                     {post.date}
                   </span>
+                  <a href="https://medium.com/" target="_blank" rel="noopener noreferrer" className="font-sans text-[11px] text-gold uppercase tracking-widest hover:underline">Read Full Blog</a>
                 </div>
               </div>
             </motion.div>

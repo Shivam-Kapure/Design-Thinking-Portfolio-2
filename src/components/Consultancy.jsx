@@ -74,7 +74,7 @@ const Consultancy = () => {
             </h3>
             
             <p className="font-sans font-light text-[16px] leading-[1.8] text-muted dark:text-[#A09890] mb-12 max-w-xl">
-              Dr. Ambudkar offers bespoke consultancy engagements for educational institutions, corporate L&D
+              Dr. Vance offers bespoke consultancy engagements for educational institutions, corporate L&D
               divisions, and government bodies seeking to institutionalize Design Thinking and build lasting
               innovation capability.
             </p>

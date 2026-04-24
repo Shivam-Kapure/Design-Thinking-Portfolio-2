@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import bhavnaImg from '../assets/images/bhavna.jpg';
+import professorImg from '../assets/images/professor.png';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -23,7 +23,7 @@ const Hero = () => {
           >
             <div className="h-px w-[32px] bg-gold" />
             <span className="font-sans text-[11px] tracking-[0.25em] uppercase text-gold">
-              Professor · Design Thinking · SIT Pune
+              Professor · Design Thinking · Hogwarts
             </span>
           </motion.div>
 
@@ -43,7 +43,7 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="font-sans font-light text-[14px] md:text-[16px] leading-[1.7] text-muted dark:text-[#A09890] max-w-lg mb-10"
           >
-            Associate Professor & Design Thinking Lead at Symbiosis Institute of Technology, Pune —
+            Associate Professor & Design Thinking Lead at Hogwarts University —
             empowering the next generation of innovators through research, mentorship, and systemic thinking.
           </motion.p>
 
@@ -73,10 +73,10 @@ const Hero = () => {
           >
             {/* Social links */}
             {[
-              { name: 'LinkedIn', url: '#' },
-              { name: 'Google Scholar', url: '#' },
-              { name: 'ResearchGate', url: '#' },
-              { name: 'Academia', url: '#' }
+              { name: 'LinkedIn', url: 'https://linkedin.com/' },
+              { name: 'Google Scholar', url: 'https://scholar.google.com/' },
+              { name: 'ResearchGate', url: 'https://www.researchgate.net/' },
+              { name: 'Academia', url: 'https://www.academia.edu/' }
             ].map((social, idx) => (
               <a
                 key={idx}
@@ -99,9 +99,9 @@ const Hero = () => {
           style={{ clipPath: 'polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%)' }}
         >
           <img 
-            src={bhavnaImg} 
+            src={professorImg} 
             onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800'; }}
-            alt="Dr. Bhavna Ambudkar"
+            alt="Dr. Eleanor Vance"
             className="w-full h-full object-cover"
           />
           {/* Gradient overlay */}

@@ -35,12 +35,12 @@ const stagger = {
 
 const testimonials = [
   {
-    quote: "Dr. Ambudkar's Design Thinking workshop was a turning point. It changed not just how I build products, but how I see problems.",
-    author: "Alumni, SIT Pune (2022 Batch)"
+    quote: "Dr. Vance's Design Thinking workshop was a turning point. It changed not just how I build products, but how I see problems.",
+    author: "Alumni, Hogwarts (2022 Batch)"
   },
   {
     quote: "Her mentorship helped us pivot our startup idea three times — and land our first client within six months of graduating.",
-    author: "Founder, EdTech Startup, Pune"
+    author: "Founder, EdTech Startup, San Francisco"
   }
 ];
 
@@ -73,9 +73,9 @@ const Impact = () => {
   return (
     <section id="impact" className="bg-[#1A1814] dark:bg-[#0A0906] py-32 px-8 md:px-20">
       <div className="max-w-[1920px] mx-auto text-center md:text-left">
-        <motion.div 
-          initial="hidden" 
-          whileInView="visible" 
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeUp}
         >
@@ -90,9 +90,9 @@ const Impact = () => {
         </motion.div>
 
         {/* Stats Bar */}
-        <motion.div 
-          initial="hidden" 
-          whileInView="visible" 
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeUp}
           className="flex flex-col md:flex-row justify-between items-center py-16 border-t border-b border-[#333028] my-16 gap-12 md:gap-0"
@@ -112,9 +112,9 @@ const Impact = () => {
         </motion.div>
 
         {/* Testimonial Slider */}
-        <motion.div 
-          initial="hidden" 
-          whileInView="visible" 
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeUp}
           className="my-24 relative"
@@ -137,15 +137,15 @@ const Impact = () => {
               </motion.div>
             </AnimatePresence>
           </div>
-          
+
           <div className="flex justify-center gap-4 mt-8">
-            <button 
+            <button
               onClick={prevTestimonial}
               className="w-[40px] h-[40px] flex items-center justify-center border border-[#333028] text-[#A09890] hover:border-gold hover:text-gold transition-colors"
             >
               <ChevronLeft size={20} strokeWidth={1} />
             </button>
-            <button 
+            <button
               onClick={nextTestimonial}
               className="w-[40px] h-[40px] flex items-center justify-center border border-[#333028] text-[#A09890] hover:border-gold hover:text-gold transition-colors"
             >
@@ -155,21 +155,21 @@ const Impact = () => {
         </motion.div>
 
         {/* Impact Cards */}
-        <motion.div 
-           variants={stagger}
-           initial="hidden"
-           whileInView="visible"
-           viewport={{ once: true, margin: "-100px" }}
-           className="grid grid-cols-1 md:grid-cols-3 gap-6"
+        <motion.div
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-6"
         >
           {cards.map((card, idx) => (
-            <motion.div 
+            <motion.div
               key={idx}
               variants={fadeUp}
               className="bg-[#242018] border border-[#333028] p-8 text-left group hover:border-gold transition-colors duration-300"
             >
               <div className="w-[48px] h-[48px] rounded-full bg-gold/15 flex items-center justify-center mb-6 group-hover:bg-gold transition-colors duration-300">
-                 <Star size={20} strokeWidth={1.5} className="text-gold group-hover:text-[#0F0E0C] transition-colors" />
+                <Star size={20} strokeWidth={1.5} className="text-gold group-hover:text-[#0F0E0C] transition-colors" />
               </div>
               <h3 className="font-display text-[22px] text-[#FAF7F2] mb-3">
                 {card.title}
